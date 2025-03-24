@@ -1,0 +1,121 @@
+[
+  {
+    "question": "Who is Shaikh Ayaz Housee?",
+    "variations": [
+      "Tell me about Shaikh Ayaz Housee",
+      "What does Shaikh Ayaz Housee teach?",
+      "Information about Shaikh Ayaz Housee"
+    ],
+    "keywords": ["Shaikh Ayaz Housee", "Tafsir", "Faculty"],
+    "answer": "Shaikh Ayaz Housee is a faculty member specializing in Tafsir (Quranic Exegesis) in English. He graduated from the Islamic University of Madinah and is a renowned preacher approved by the UAE Ministry of Islamic Affairs.",
+    "category": "Faculty"
+  },
+  {
+    "question": "What is the Story Nights course?",
+    "variations": [
+      "Tell me about Story Nights",
+      "What is taught in Story Nights?",
+      "Details about Story Nights course"
+    ],
+    "keywords": ["Story Nights", "Shaikh Ayaz Housee", "Course"],
+    "answer": "Story Nights is a course conducted by Shaikh Ayaz Housee. It includes live sessions and recordings, held every alternate Sunday at 07:00 PM KSA time.",
+    "details": {
+      "description": "Story Nights is an engaging course that uses storytelling to teach Islamic history, values, and lessons from the Quran and Sunnah.",
+      "topics_covered": [
+        "Stories of the Prophets",
+        "Lessons from Islamic history",
+        "Moral and ethical teachings from the Quran"
+      ],
+      "learning_outcomes": [
+        "Understand Islamic history through stories",
+        "Learn moral lessons from the lives of the Prophets",
+        "Apply Islamic values in daily life"
+      ]
+    },
+    "category": "Courses"
+  },
+  {
+    "question": "What is the Quranic Arabic Program?",
+    "variations": [
+      "Tell me about the Quranic Arabic Program",
+      "What is taught in the Quranic Arabic Program?",
+      "Details about Quranic Arabic course"
+    ],
+    "keywords": ["Quranic Arabic", "Ustaad Hussain", "Arabic Course"],
+    "answer": "The Quranic Arabic Program is conducted by Ustaad Hussain. It includes live sessions held every Saturday and Sunday at 09:00 AM KSA time.",
+    "details": {
+      "description": "This program helps students understand the Arabic language of the Quran, enabling them to comprehend the Quran directly.",
+      "topics_covered": [
+        "Quranic vocabulary",
+        "Arabic grammar",
+        "Sentence structure in the Quran"
+      ],
+      "learning_outcomes": [
+        "Read and understand the Quran in Arabic",
+        "Gain a deeper connection with the Quran",
+        "Improve Arabic language skills"
+      ]
+    },
+    "category": "Courses"
+  },
+  {
+    "question": "What is the Tajweed course?",
+    "variations": [
+      "Tell me about the Tajweed course",
+      "What is taught in the Tajweed course?",
+      "Details about Tajweed"
+    ],
+    "keywords": ["Tajweed", "Quran recitation", "Tajweed Course"],
+    "answer": "The Tajweed course focuses on the rules of Quranic recitation. It is designed to help students master the art of Tajweed.",
+    "details": {
+      "description": "This course teaches the rules of Tajweed to ensure proper pronunciation and recitation of the Quran.",
+      "topics_covered": [
+        "Rules of Noon Sakinah and Tanween",
+        "Rules of Meem Sakinah",
+        "Makharij (articulation points of letters)"
+      ],
+      "learning_outcomes": [
+        "Recite the Quran with proper Tajweed",
+        "Improve Quranic pronunciation",
+        "Gain confidence in Quranic recitation"
+      ]
+    },
+    "category": "Courses"
+  },
+  {
+    "question": "What is the Quran Memorization Program?",
+    "variations": [
+      "Tell me about the Quran Memorization Program",
+      "How can I memorize the Quran?",
+      "Details about Quran memorization"
+    ],
+    "keywords": ["Quran Memorization", "Hifz", "Memorization Course"],
+    "answer": "The Quran Memorization Program allows students to memorize the Quran at their own pace.",
+    "details": {
+      "description": "This program helps students memorize the Quran through structured lessons and personalized guidance.",
+      "topics_covered": [
+        "Memorization techniques",
+        "Revision strategies",
+        "Tajweed rules for memorization"
+      ],
+      "learning_outcomes": [
+        "Memorize selected portions or the entire Quran",
+        "Develop a strong connection with the Quran",
+        "Improve focus and discipline"
+      ]
+    },
+    "category": "Courses"
+  },
+  {
+    "question": "How many courses are available?",
+    "variations": [
+      "Number of courses",
+      "List all courses",
+      "What courses do you offer?",
+      "Tell me about all courses"
+    ],
+    "keywords": ["courses", "number of courses", "list courses"],
+    "answer": "There are 5 courses available. Here is the list of all courses:\n1. Story Nights\n2. Quranic Arabic Program\n3. Tajweed Course\n4. Quran Memorization Program\n5. Sunday School Program",
+    "category": "Courses"
+  }
+]
