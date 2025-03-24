@@ -5,13 +5,11 @@ import google.generativeai as genai
 
 # Load environment variables
 load_dotenv()
-genai.configure(api_key=os.getenv("GEMINI_API_KEY"))  # ✅ Secure
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
 # Rest of your code remains the same...
 model = genai.GenerativeModel('gemini-1.5-flash-latest')
-# ... (remaining code)
-# Initialize the model correctly
-model = genai.GenerativeModel('gemini-1.5-flash-latest')  # Use exact model name
+
 
 # Load the JSON data
 with open('chatbot_data.json', 'r') as f:
