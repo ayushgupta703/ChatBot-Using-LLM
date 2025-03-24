@@ -1,10 +1,15 @@
+import os
 import json
+from dotenv import load_dotenv
 import google.generativeai as genai
 
-# Configure Gemini
-API_KEY = "AIzaSyD3hwKdDESvUyjHhWoa-MbgEAMbXCy7_uQ"  # Replace with your actual API key
-genai.configure(api_key=API_KEY)
+# Load environment variables
+load_dotenv()
+genai.configure(api_key=os.getenv("GEMINI_API_KEY"))  # ✅ Secure
 
+# Rest of your code remains the same...
+model = genai.GenerativeModel('gemini-1.5-flash-latest')
+# ... (remaining code)
 # Initialize the model correctly
 model = genai.GenerativeModel('gemini-1.5-flash-latest')  # Use exact model name
 
