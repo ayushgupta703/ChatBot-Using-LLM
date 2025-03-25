@@ -3,15 +3,11 @@ import json
 from dotenv import load_dotenv
 import google.generativeai as genai
 
-# Load environment variables
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
-# Rest of your code remains the same...
 model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
-
-# Load the JSON data
 with open('chatbot_data.json', 'r') as f:
     knowledge_base = json.load(f)
 
@@ -49,8 +45,6 @@ def generate_response(user_input):
     except Exception as e:
         return f"I couldn't find that information. (Error: {str(e)})"
 
-
-# Chatbot interface
 print("Welcome to Global Learning Academy Chatbot!")
 print("Ask about courses or faculty. Type 'exit' to quit.\n")
 
