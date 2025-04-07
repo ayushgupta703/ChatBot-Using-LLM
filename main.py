@@ -11,7 +11,6 @@ model = genai.GenerativeModel('gemini-1.5-flash-latest')
 with open('chatbot_data.json', 'r') as f:
     knowledge_base = json.load(f)
 
-
 def create_context(knowledge_base):
     """Convert JSON data into a context string"""
     context = "You are a helpful assistant for The Global Learning Academy. Here is the information:\n\n"
@@ -24,8 +23,7 @@ def create_context(knowledge_base):
         context += "\n"
     return context
 
-
-def generate_response(user_input):
+def get_chatbot_response(user_input):
     """Generate response using Gemini with context"""
     prompt = f"""
     Context:
@@ -44,15 +42,3 @@ def generate_response(user_input):
         return response.text
     except Exception as e:
         return f"I couldn't find that information. (Error: {str(e)})"
-
-print("Welcome to Global Learning Academy Chatbot!")
-print("Ask about courses or faculty. Type 'exit' to quit.\n")
-
-while True:
-    user_input = input("You: ")
-    if user_input.lower() in ['exit', 'quit']:
-        print("Chatbot: Thank you for chatting!")
-        break
-
-    response = generate_response(user_input)
-    print(f"Chatbot: {response}\n")
