@@ -1,5 +1,6 @@
 import streamlit as st
 from main import get_chatbot_response
+from db_config import save_chat_message, get_chat_history
 
 # Page config
 st.set_page_config(page_title="GLA Chatbot", page_icon="🤖", layout="centered")
@@ -40,6 +41,11 @@ st.markdown("Ask me anything about the Global Learning Academy!")
 # Session state for chat history
 if "messages" not in st.session_state:
     st.session_state.messages = []
+    # Load previous chat history from MongoDB
+    previous_chats = get_chat_history()
+    for chat in reversed(previous_chats):
+        st.session_state.messages.append({"role": "user", "content": chat["user_message"]})
+        st.session_state.messages.append({"role": "bot", "content": chat["bot_response"]})
 
 # Function to handle message sending
 def handle_send():
@@ -48,6 +54,10 @@ def handle_send():
         st.session_state.messages.append({"role": "user", "content": user_input})
         response = get_chatbot_response(user_input)
         st.session_state.messages.append({"role": "bot", "content": response})
+        
+        # Save chat to MongoDB
+        save_chat_message(user_input, response)
+        
         st.session_state.user_input = ""  # Clears input box
 
 # Display chat messages
