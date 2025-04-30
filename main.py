@@ -3,6 +3,7 @@ import json
 from dotenv import load_dotenv
 import google.generativeai as genai
 
+# Load environment variables
 load_dotenv()
 genai.configure(api_key=os.getenv("GEMINI_API_KEY"))
 
@@ -42,3 +43,9 @@ def get_chatbot_response(user_input):
         return response.text
     except Exception as e:
         return f"I couldn't find that information. (Error: {str(e)})"
+
+# Only run code below if this script is executed directly, not when imported
+if __name__ == "__main__":
+    # Simple test to ensure the function works
+    test_response = get_chatbot_response("What courses do you offer?")
+    print(test_response)

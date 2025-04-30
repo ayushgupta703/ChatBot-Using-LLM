@@ -60,23 +60,6 @@ st.markdown("""
         margin-bottom: 0;
     }
     
-    .chat-box {
-        background-color: #1a1a1a;
-        border-radius: 12px;
-        padding: 20px;
-        height: 500px;
-        overflow-y: auto;
-        scroll-behavior: smooth;
-        box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.5);
-    }
-    
-    /* Style for empty chat box */
-    .chat-box:empty {
-        background-color: rgba(26, 26, 26, 0.3);
-        height: auto;
-        min-height: 200px;
-    }
-    
     .chat-message {
         display: flex;
         margin-bottom: 16px;
@@ -141,7 +124,6 @@ st.markdown("""
         display: flex;
         margin-top: 20px;
         background: rgba(255, 255, 255, 0.05);
-        padding: 8px;
         border-radius: 12px;
         border: 1px solid rgba(255, 255, 255, 0.1);
     }
@@ -408,7 +390,6 @@ st.markdown("""
 chat_container = st.container()
 
 with chat_container:
-    st.markdown("<div class='chat-box'>", unsafe_allow_html=True)
     
     # Display chat messages or welcome message if empty
     if st.session_state.messages:
